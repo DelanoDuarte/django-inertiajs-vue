@@ -5,7 +5,15 @@ build/
 dist/
 wheels/
 *.egg-info
+*.idea
 
 # venv
 .venv
-.sqlite3
+
+# DB
+*.sqlite3
+
+
+# Other
+.DS_Store
+.env
