@@ -1,0 +1,31 @@
+[project]
+name = "django-inertia-vue"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "DelanoDuarte", email = "delano.duarte@gmail.com" }
+]
+dependencies = [
+    "Django>=5.1.4",
+    "inertia-django>=1.1.0",
+    "django_vite>=3.0.6",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[project.scripts]
+hello = "django_inertia_vue:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/django_inertia_vue"]
